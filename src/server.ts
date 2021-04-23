@@ -1,24 +1,37 @@
-﻿import express from "express";
+﻿// import express from "express";
+// import { routes } from "./routes";
+// import "./database";
+
+// const app = express();
+// app.use(express.json());
+
+// app.use(routes);
+
+
+
+// app.get("/", (request, response) => {
+//   return response.json({
+//     message: "Olá NLW 5!",
+//   });
+// });
+
+// // app.post("/", (request, response) => {
+// //   return response.json({
+// //     message: "Usuário salvo com sucesso!",
+// //   });
+// // });
+
+// app.listen(3333, () => console.log("Server is running on port 3333"));
+
+import express from "express";
+
+import "./database";
+import { routes } from "./routes";
 
 const app = express();
-/**
- * GET = Buscas
- * POST = Criação
- * PUT = Alteração
- * DELETE = Deletar
- * PATCH = Alterar uma informação
- */
 
-app.get("/", (request, response) => {
-  return response.json({
-    message: "Olá NLW 5!",
-  });
-});
+app.use(express.json());
 
-app.post("/", (request, response) => {
-  return response.json({
-    message: "Usuário salvo com sucesso!",
-  });
-});
+app.use(routes);
 
-app.listen(3333, () => console.log("Server is running on port 3333"));
+app.listen(3333, () => console.log("Server is running!"));
