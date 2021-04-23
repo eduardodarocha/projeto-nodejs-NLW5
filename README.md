@@ -1,5 +1,5 @@
 <h1 align="center">
-    Chat - Project Nodejs - NLW5 by Rocketseat
+    Chatting - Project Nodejs - NLW5 by Rocketseat
     <!-- <img alt="Podcastr" title="Podcastr" src=".github/podcastr.svg" /> -->
 </h1>
 
@@ -7,6 +7,8 @@
   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-How to contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Issue">Issue</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <!-- <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; -->
   <a href="#-license">License</a>
 </p>
@@ -57,6 +59,19 @@ $ yarn dev
 <!-- [Chat](https://podcastr-nlw.vercel.app/) to bring you even closer to the best technology podcasts! -->
 
 This is a project developed during the **[Next Level Week 5](https://nextlevelweek.com/)**, presented by **[@Rocketseat](https://github.com/Rocketseat)** during April 19-25, 2021.
+
+## ♻️ How to contribute
+
+```bash
+- Fork this repository: `https://github.com/eduardodarocha/projeto-nodejs-NLW5.git`;
+- Create a branch with your feature: `git checkout -b my-feature`;
+- Commit your changes: `git commit -m 'feat: My new feature'`; 
+- Push to your branch: `git push origin my-feature`.
+
+After the merge of your pull request is done, you can delete your branch. 
+```
+## ⚠️Issue
+Feel free to register a new issue with its title and description in the Chatting repository. If you have already found a solution to your problem, I would love to review your pull request!
 
 ## 📝 License
 
