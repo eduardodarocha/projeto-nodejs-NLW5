@@ -102,3 +102,16 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Database
+**/database.sqlite
+
+# ignore all files in any directory named build
+build/
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Temporary folders
+tmp/
+temp/
