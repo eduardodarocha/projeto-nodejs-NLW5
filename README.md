@@ -30,6 +30,7 @@ This project was developed using the following technologies:
 
 - [Node.js](https://nodejs.org)
 - [TypeORM](https://typeorm.io)
+- [Sqlite](https://www.sqlite.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Express](https://expressjs.com/)
 - [Yarn](https://yarnpkg.com/)
