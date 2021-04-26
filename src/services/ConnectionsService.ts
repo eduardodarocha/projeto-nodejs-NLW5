@@ -1,4 +1,5 @@
 import { getCustomRepository } from 'typeorm';
+import { Connection } from '../entities/Connection';
 
 import { ConnectionsRepository } from '../repositories/ConnectionsRepository';
 
@@ -32,6 +33,45 @@ class ConnectionsService {
 
     return connection;
   }
+
+  async findAllWithoutAdmin() {
+    const connections = this.connectionsRepository.find({
+      where: {
+        admin_id: null,
+      },
+      relations: ['user'],
+    });
+
+    return connections;
+  }
+
+  async findBySocketID(socket_id: string) {
+    const connection = this.connectionsRepository.findOne({ socket_id });
+
+    return connection;
+  }
+
+  async updateAdminID(user_id: string, admin_id: string) {
+    await this.connectionsRepository
+      .createQueryBuilder()
+      .update(Connection)
+      .set({ admin_id })
+      .where('user_id = :user_id', {
+        user_id,
+      })
+      .execute();
+  }
+// Acrescentei aqui*************
+  async removeAdminID(user_id: string) {
+    await this.connectionsRepository
+    .createQueryBuilder()
+    .update(Connection)
+    .set({ admin_id: null })
+    .where("user_id = :user_id", {
+        user_id,
+    })
+    .execute();
+}
 }
 
 export { ConnectionsService };
